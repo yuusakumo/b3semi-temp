@@ -18,6 +18,7 @@
 ## 一様分布
 
  ![image](./figure/sample.png)
+
  *図1: サンプル*
  
 ## 指数分布
