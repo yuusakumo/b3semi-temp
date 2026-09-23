@@ -22,13 +22,13 @@ class ScatFig:
         self._fig, self._axes = plt.subplots(1, 1, tight_layout = True)
 
         self._n_data = 0
-        self._draw_line = True
+        self.with_line()
 
     def add_data(self, x_data: list[float], y_data: list[float], name: str = "") :
         # 図にデータを追加
 
         # # marker の生成
-        marker = "" if self._draw_line else ""
+        marker = "-" if self._draw_line else ""
 
         symbols = ['o', 'x', '*', 'v', '^']
         kind_symbol = self._n_data % len(symbols)
@@ -55,6 +55,14 @@ class ScatFig:
     def set_yscale(self, scale: str = 'linear'):
         # y 軸のスケール(linear/log)を設定
         self._axes.set_yscale(scale)
+
+    def without_line(self):
+        # 線を描画しない
+        self._draw_line = False
+
+    def with_line(self):
+        # 線を描画する
+        self._draw_line = True
 
     def set_xlim(self, x_min: float, x_max: float):
         # x 軸の範囲を設定
