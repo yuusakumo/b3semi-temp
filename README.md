@@ -7,7 +7,23 @@
    - 大学 e-mail: sakumoto@kwansei.ac.jp
 
 ## 使用方法
-
+### 初期設定
+ - まず，はじめに，このリポジトリをテンプレートとして自身用のリポジトリを作成
+   - 右上の [Use this template] → [Create a new repository] を選択
+   - 次の画面で以下をする
+     - リポジトリ名を適当につける
+     - Choose visibility は [Private] (他の人から見えないようにする) に設定
+     - 下の [Create repository] を選択
+ - 次に，作成した自身用のリポジトリで，codespaces を起動 
+   - [<> Code] → [Create codespace on main] を選択 (起動するまで数分時間がかかります)
+   - 途中, [このフォルダ内のファイルの作成者を信頼しますか？」と聞かれるので [フォルダを信頼して続行] を選択
+   - codespace とは？
+     - GitHub 上でプログラミングやファイルの編集が行える
+     - codespace ではなく，VS Code の GitHub 連携で十分かもしれない
+ - 
+ に対して以下を行ってください
+   - README.md にある使用者の情報変更
+   - 作元の GitHub アカウント(yuusakumo) を Settings から
  - 以下で説明するディレクトリ構成で，テンプレートのファイルを置いています．実習で使用してください．
    - src 内にあるソースファイルに課題のプログラムを記載してください．
    - report 内にあるレポートファイルに実験結果をまとめて報告してください
